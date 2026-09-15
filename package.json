@@ -1,0 +1,24 @@
+{
+  "name": "mquickcalc-finance-mcp",
+  "version": "0.1.0",
+  "description": "mQuickCalc Finance MCP Server - Etsy, eBay, Stripe fee & profit calculators for AI agents",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mquickcalc-finance-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "prepublish": "npm run build",
+    "start": "node dist/index.js"
+  },
+  "keywords": ["mcp", "mcp-server", "calculator", "finance", "etsy", "ebay", "stripe", "fee-calculator"],
+  "author": "mQuickCalc",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
